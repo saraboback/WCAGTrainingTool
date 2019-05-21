@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang ="en">
+    
+    <head>
+            <title>Keyboard Trap- Scavenger Hunt</title>
+            
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	
+		<link rel="stylesheet" href="styles.css">
+		
+						<!-- Latest compiled and minified JavaScript -->
+						<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+						<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+				<script type="scripts.js"></script>
+</head>
+    <body>
+            <img src="acoelogo.jpg" alt="Accessibility Centre of Excellence logo">
+            <a class="skip-main" href="#main">Skip to main content</a>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <div class="navbar-collapse collapse py-1.5" id="navbar3">
+                <ul class="navbar-nav">
+                    <li>
+                        <a class="nav-link" href="home.html">Home<span class="sr-only"></span></a>
+                    </li>
+                <ul class="navbar-nav">
+                    <li>
+                        <a class="nav-link" href="about.html">About <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reqdoc.html">Required Documents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>	
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sitemap.html">Site Map</a>	
+                    </li>
+                </ul>
+            </div>
+        </nav>
+				<div>
+                        <br>
+        <h1 id="main"> WCAG 2.0 Level A - No Keyboard Trap - 2.1.2 </h1>
+        <h2> Instructions: </h2>
+        <ol>
+        <li>If you're currently using Internet Explorer, open a new Chrome browser window and copy the URL in the address bar. Paste the URL in your newly opened Chrome browser and use Chrome to test this page.</li>
+        <li>Review the content on the page using the keyboard Tab key. Focus on the area labeled, Area of Issue.</li>
+        <li>Review your WCAG 2.0 Checklist, <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html">success criteria 2.1.2 No Keyboard Trap.</a></li>
+        <li>Determine the accessibility issue with the content on this page.</li> 
+        <li>Document the issue in the WCAG Accessibility Compliance Report Excel Spreadsheet.</li>
+        <li>Once the issue has been documented, please proceed to the next page by selecting the Next Page button.</li>
+        </ol>
+
+        <h2 class= "issue"> Area of Issue: </h2>
+                <p>A keyboard trap occurs when a user can get into a component or element on a web page by using the keyboard but cannot get out of that component or element through the use of the keyboard.</p>
+                <img src="img/tab.png" alt="tab key">
+                <br>
+                <br>
+                <label for="test">Enter your first name:</label>
+                    <input id="test" type="text" value="" class="trap" onblur="this.focus();">
+                <p>Tab to the next focusable element</p>
+                <p>This is an issue because not everyone who uses the internet will use a mouse for navigation.
+                This may be due to personal preference, limitations of their hardware or some form of disability that prevents them from being able to use a mouse effectively. </p>
+                <a href="#"> Can you make it this link using the tab key?</a>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <button aria-label="Close" onclick="myDialog.close()">X</button>
+                <br>
+                <br>
+                <br>
+                
+        <h2 class="issue">End Area of Issue:</h2>
+        <a href="keyboard.html" class="btn-lg">Previous Page</a>
+        <a href="pausehide.html" class="btn-lg">Next Page</a>
+        
+        
+        </body>
+
+                
+ </html>
+

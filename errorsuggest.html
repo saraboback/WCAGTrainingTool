@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang ="en">
+    
+    <head>
+            <title>Error Suggestion - Scavenger Hunt</title>
+
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	
+            <link rel="stylesheet" href="styles.css">
+            
+                            <!-- Latest compiled and minified JavaScript -->
+                            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+                            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+                    <script type="scripts.js"></script>
+
+</head>
+    <body>
+            <img src="acoelogo.jpg" alt="Accessibility Centre of Excellence logo">
+            <a class="skip-main" href="#main">Skip to main content</a>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <div class="navbar-collapse collapse py-1.5" id="navbar3">
+                <ul class="navbar-nav">
+                    <li>
+                        <a class="nav-link" href="home.html">Home<span class="sr-only"></span></a>
+                    </li>
+                <ul class="navbar-nav">
+                    <li>
+                        <a class="nav-link" href="about.html">About <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reqdoc.html">Required Documents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>	
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sitemap.html">Site Map</a>	
+                    </li>
+                </ul>
+            </div>
+        </nav>
+				<div>
+            <br>
+        <h1 id="main"> WCAG 2.0 Level AA - Error Suggestion - 3.3.3 </h1>
+        <h2> Instructions: </h2>
+        <ol>
+        <li>Review the content on this page ONLY within the section marked Area of Issue. Take a close look at the format required for the input boxes.</li>
+        <li>Review your WCAG 2.0 Checklist, <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html">success criteria 3.3.3 Error Suggestion.</a></li>
+        <li>Determine the accessibility issue with the content on this page.</li> 
+        <li>Document the issue in the WCAG Accessibility Compliance Report Excel Spreadsheet.</li>
+        <li>Once the issue has been documented, please proceed to the next page by selecting the Next Page button.</li>
+        <li>Note: You may find multiple errors on this page, but for the purpose of this exercise focus on the success criteria 3.3.3</li>
+        </ol>
+
+        <h2 class="issue"> Area of Issue: </h2>
+        
+        <h3>Sign Up</h3>
+            <p>Please fill in this form to create an account.</p>
+
+            <div class="contain">
+                    <form action="#">
+                      <label for="usrname">Username: </label>
+                      <input type="text" id="usrname" name="usrname" required> <br> 
+                  
+                      <label for="psw">Password: </label>
+                    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{14,}" required>
+                    <br>
+                  
+                      <a href="#" class="btn-lg" style="background-color:green" value="Submit"> Submit </a>
+                    </form>
+                  </div>
+                  
+                  <div id="message">
+                    <h4>Password Validity - make sure your password meets the password requirements</h4>
+                    <p id="letter" class="invalid">Characters</p>
+                    <p id="capital" class="invalid">Uppercase</p>
+                    <p id="number" class="invalid">Error</p>
+                    <p id="length" class="invalid">Length</p>
+
+                  </div>
+       
+        <h2 class="issue">End Area of Issue:</h2>
+        <a href="label.html" class="btn-lg">Previous Page</a>
+        <a href="parsing.html" class="btn-lg">Next Page</a>
+        
+        
+        <script>
+                let myInput = document.getElementById("psw");
+                let letter = document.getElementById("letter");
+                let capital = document.getElementById("capital");
+                let number = document.getElementById("number");
+                let length = document.getElementById("length");
+                
+                // When the user clicks on the password field, show the message box
+                myInput.onfocus = function() {
+                  document.getElementById("message").style.display = "block";
+                }
+                
+                // When the user clicks outside of the password field, hide the message box
+                myInput.onblur = function() {
+                  document.getElementById("message").style.display = "none";
+                }
+                
+                // When the user starts to type something inside the password field
+                myInput.onkeyup = function() {
+                  // Validate lowercase letters
+                  let lowerCaseLetters = /[a-z]/g;
+                  if(myInput.value.match(lowerCaseLetters)) { 
+                    letter.classList.remove("invalid");
+                    letter.classList.add("valid");
+                  } else {
+                    letter.classList.remove("valid");
+                    letter.classList.add("invalid");
+                }
+                
+                  // Validate capital letters
+                  let upperCaseLetters = /[A-Z]/g;
+                  if(myInput.value.match(upperCaseLetters)) { 
+                    capital.classList.remove("invalid");
+                    capital.classList.add("valid");
+                  } else {
+                    capital.classList.remove("valid");
+                    capital.classList.add("invalid");
+                  }
+                
+                  // Validate numbers
+                  let numbers = /[0-9]/g;
+                  if(myInput.value.match(numbers)) { 
+                    number.classList.remove("invalid");
+                    number.classList.add("valid");
+                  } else {
+                    number.classList.remove("valid");
+                    number.classList.add("invalid");
+                  }
+                
+                  // Validate length
+                  if(myInput.value.length >= 14) {
+                    length.classList.remove("invalid");
+                    length.classList.add("valid");
+                  } else {
+                    length.classList.remove("valid");
+                    length.classList.add("invalid");
+                  }
+                }
+                </script>
+    
+        </body>
+
+                
+ </html>

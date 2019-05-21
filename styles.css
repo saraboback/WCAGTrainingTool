@@ -1,0 +1,271 @@
+body {
+    position: relative;
+}
+body{
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 3%;
+}
+.jumbotron{
+    background-color: #dce7f3;
+    padding: 5%;
+}
+.btn{
+    color: black;
+    background: #e0f8f8;
+
+}
+.nav{
+    font-size: 26px;
+}
+
+.btn-lg{
+    font-size: 20px;
+    background-color: #303633;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+a.button{
+    font-size: 20px;
+    background-color: #303633;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.button:focus{
+    background: black;
+    color: white;
+    display: none;
+}
+
+.btn-lg:hover {
+    color: #dce7f3;
+
+}
+
+.btn-lg:focus {
+    background: #dce7f3;
+  color: black;
+ }
+
+ a:focus{
+    background: #dce7f3;
+    color: black;
+ }
+
+ .nav-link:focus{
+    background: #303633;
+  color: white;
+  outline: white;
+  box-shadow: inset 0 0 0 1px black, 0 0 3px 1px white;
+ }
+
+ input:focus{
+    box-shadow: inset 0 0 0 1px black, 0 0 3px 1px navy;
+ }
+
+.list-group{
+    background-color: #303633;
+    text-shadow: #303633;
+    color: white;
+}
+
+.list-group-item{
+    background-color:#dce7f3;
+    text-shadow: #303633;
+    color: black;
+    font-size: 22px;
+        
+}
+
+.list-group-item:focus{
+    box-shadow: inset 0 0 0 1px black, 0 0 3px 1px black;
+    
+    
+}
+
+.list-group-item.active{
+    background-color: aqua;
+}
+.form-control{
+    width: 50%;
+}
+
+.issue{
+    padding-left: 10%;
+    padding-right: 50%;
+    background:#dce7f3;
+    border-width:2px;
+border-style:solid;
+border-color:black;
+padding-top: 25px;
+padding-right: 50px;
+padding-bottom: 25px;
+padding-left: 50px;
+    
+}
+
+p {
+    font-size: 18px;
+  }
+
+li{
+    font-size: 18px; 
+}
+h1{
+    font-size: 26px;  
+}
+h2{
+    color: #003366;
+    font-size: 22px;
+}
+
+h3{
+    font-size: 19px;
+}
+
+td, th {
+    border: solid 1px black;
+    font-size: 18px;
+    } 
+
+table{
+    font-size: 18px;
+    border-spacing: 10%;
+}
+
+    a.skip-main {
+        left:-999px;
+        position:absolute;
+        top:auto;
+        width:1px;
+        height:1px;
+        overflow:hidden;
+        z-index:-999;
+    }
+    a.skip-main:focus, a.skip-main:active {
+        color: #fff;
+        background-color:#000;
+        left: auto;
+        top: auto;
+        width: 30%;
+        height: auto;
+        overflow:auto;
+        margin: 10px 35%;
+        padding:5px;
+        border-radius: 15px;
+        border:4px solid #dce7f3;
+        text-align:center;
+        font-size:1.2em;
+        z-index:999;
+    }
+
+    caption{
+        font-size: 18px;
+    }
+
+    a{
+        font-size: 19px;
+    }
+
+
+    }
+
+    input{
+        font-size:20px;
+        font-family: Helvetica Neue;
+    }
+
+    .navbar-dark .navbar-nav .nav-link{
+        color: white;
+    }
+
+    /* form validation
+    */
+
+    /* Style all input fields */
+input {
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Style the container for inputs */
+  .contain {
+    background-color: #fbfbfb;
+    padding: 5px;
+    position: relative;
+
+  }
+  
+  /* The message box is shown when the user clicks on the password field */
+  #message {
+    display:none;
+    background: #fbfbfb;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "Correct";
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: #8B0000;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "X";
+  }
+  
+  /* no focus visible box for the focus visible page*/
+  .nofocus:focus {
+     outline: none;
+     border: none;
+  }
+
+  #senses img{
+    width: 25%;  
+    height: auto;
+
+  }
+  
+  a{
+      color:#0000CD
+  }
+ 
